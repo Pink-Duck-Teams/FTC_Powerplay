@@ -1,0 +1,7 @@
+cd C:\Users\user\AppData\Local\Android\Sdk\platform-tools
+
+cd c:\users\user\appdata\local\android\sdk\platform-tools
+
+.\adb connect 192.168.43.1
+
+.\adb disconnect
