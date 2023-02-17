@@ -20,12 +20,14 @@ public class AutoOdometryTest extends LinearOpMode {
 
         bot.start();
 
-        bot.move(this, 0, 200, 0.3, 0, 5);
-        bot.rotate(90);
-        bot.move(this, 100, 200, 0.3, 90, 5);
-        bot.move(this, 0, 200, 0.3, 90, 5);
-        bot.rotate(0);
-        bot.move(this, 0, 0, 0.3, 0, 5);
+        bot.move(this, 0, 0, 0.3, 0, 3);
+        bot.move(this, 0, 100, 0.3, 0, 3);
+        bot.move(this, 0, 0, 0.3, 0, 3);
+        bot.move(this, 0, 100, 0.3, 0, 3);
+        bot.move(this, 0, 0, 0.3, 0, 3);
+        bot.move(this, 0, 100, 0.3, 0, 3);
+        bot.move(this, 0, 0, 0.3, 0, 3);
+        bot.move(this, 0, 100, 0.3, 0, 3);
 
         sleep(500);
     }
