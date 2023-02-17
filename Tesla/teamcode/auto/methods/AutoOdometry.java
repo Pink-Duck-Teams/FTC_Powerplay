@@ -365,9 +365,9 @@ public class AutoOdometry extends LinearOpMode {
 
         angles = imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES);
 
-        prev_x = m1.getCurrentPosition();
-        prev_y1 = m2.getCurrentPosition();
-        prev_y2 = m3.getCurrentPosition();
+        prev_x = m1.getCurrentPosition() + prev_x;
+        prev_y1 = m2.getCurrentPosition() + prev_y1;
+        prev_y2 = m3.getCurrentPosition() + prev_y2;
 
         while (opModeIsActive() && !isStopRequested() && Math.abs(angles.firstAngle - ugolok) > 0.3) {
 
